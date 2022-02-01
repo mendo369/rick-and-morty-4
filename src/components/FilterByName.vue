@@ -29,15 +29,23 @@ export default {
 </script>
 
 <style lang="scss">
+:root{
+    --width-search: 400px;
+}
 .search{
-    width: 400px;
+    width: var(--width-search);
     margin: 3rem auto 0;
     input{
         height: 53px;
-        width: 400px;
+        width: var(--width-search);
         border: none;
         border-radius: 10px;
         padding: 0 0.5rem;
+    }
+}
+@media(max-width: 460px){
+    :root{
+        --width-search: 100%;
     }
 }
 </style>

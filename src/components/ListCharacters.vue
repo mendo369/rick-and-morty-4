@@ -38,4 +38,17 @@ export default {
     gap: 3rem;
     margin: 3rem 0;
 }
+@media(max-width:620px){
+    .characters{
+        grid-template-columns: repeat(3, 0.7fr);
+        gap: 1rem;
+    }
+}
+@media(max-width:550px){
+    .characters{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
 </style>

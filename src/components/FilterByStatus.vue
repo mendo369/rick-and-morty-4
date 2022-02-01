@@ -25,8 +25,11 @@ setup(){
 </script>
 
 <style lang="scss">
+:root{
+    --width-search: 400px;
+}
 .filter{
-    width: 400px;
+    width: var(--width-search);
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -40,6 +43,11 @@ setup(){
         &:hover{
             color: var(--text-orange);
         }
+    }
+}
+@media(max-width: 460px){
+    :root{
+        --width-search: 100%;
     }
 }
 </style>
